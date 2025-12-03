@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1565242_vehicle.integration" name="x_1565242_vehicle.integration">39b5f55e83e5b2104eca5fd6feaad37e</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-03 14:55:57</sys_created_on>
+        <sys_id>79b5f55e83e5b2104eca5fd6feaad383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>39b5f55e83e5b2104eca5fd6feaad37e</sys_name>
+        <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
+        <sys_update_name>sys_embedded_help_role_79b5f55e83e5b2104eca5fd6feaad383</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-03 14:55:57</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
