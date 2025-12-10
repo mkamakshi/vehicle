@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="3d8ece9e83a9b2104eca5fd6feaad3da" sys_domain="global" table="x_1565242_vehicle_vehicle" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>make</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>cacf4a5283e9b2104eca5fd6feaad3c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>86cf4a5283e9b2104eca5fd6feaad3c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>year</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>42cf4a5283e9b2104eca5fd6feaad3c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vin</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>0ecf4a5283e9b2104eca5fd6feaad3c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>c6cf4a5283e9b2104eca5fd6feaad3c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>82cf4a5283e9b2104eca5fd6feaad3c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>4ecf4a5283e9b2104eca5fd6feaad3c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>0acf4a5283e9b2104eca5fd6feaad3c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>c2cf4a5283e9b2104eca5fd6feaad3c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_date</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:49:50</sys_created_on>
+            <sys_id>8ecf4a5283e9b2104eca5fd6feaad3c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1565242_vehicle_vehicle" sys_domain="global" view="Default view">3d8ece9e83a9b2104eca5fd6feaad3da</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:49:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1565242_vehicle_vehicle</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-03 16:44:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d8ece9e83a9b2104eca5fd6feaad3da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1565242_vehicle_vehicle</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
+            <sys_update_name>sys_ui_section_3d8ece9e83a9b2104eca5fd6feaad3da</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-03 16:44:22</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
