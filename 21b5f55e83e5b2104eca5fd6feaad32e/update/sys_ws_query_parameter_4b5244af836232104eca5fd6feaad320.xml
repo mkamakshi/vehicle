@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter">
+    <sys_ws_query_parameter action="INSERT_OR_UPDATE">
+        <example_value>Mitsubishi</example_value>
+        <name>make</name>
+        <required>false</required>
+        <short_description>Make of the vehicle</short_description>
+        <sys_class_name>sys_ws_query_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-25 20:48:39</sys_created_on>
+        <sys_id>4b5244af836232104eca5fd6feaad320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>make</sys_name>
+        <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_4b5244af836232104eca5fd6feaad320</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-25 20:48:39</sys_updated_on>
+        <web_service_definition display_value="Vehicles API">0a153bba831232104eca5fd6feaad3c1</web_service_definition>
+    </sys_ws_query_parameter>
+</record_update>
