@@ -4,10 +4,10 @@
         <base_uri>/api/x_1565242_vehicle/vehicles_api</base_uri>
         <consumes>application/json</consumes>
         <consumes_customized>true</consumes_customized>
-        <default_version>No active default version</default_version>
+        <default_version>v1</default_version>
         <doc_link>x_1565242_vehicle_Vehicles.do</doc_link>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
-        <is_versioned>false</is_versioned>
+        <is_versioned>true</is_versioned>
         <name>Vehicles API</name>
         <namespace>x_1565242_vehicle</namespace>
         <produces>application/json</produces>
@@ -18,13 +18,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-11 20:16:47</sys_created_on>
         <sys_id>0a153bba831232104eca5fd6feaad3c1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Vehicles API</sys_name>
         <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
         <sys_update_name>sys_ws_definition_0a153bba831232104eca5fd6feaad3c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-11 20:20:36</sys_updated_on>
+        <sys_updated_on>2026-02-10 16:26:16</sys_updated_on>
     </sys_ws_definition>
 </record_update>

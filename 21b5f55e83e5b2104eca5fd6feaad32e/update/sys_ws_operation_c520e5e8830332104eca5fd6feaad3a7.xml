@@ -3,13 +3,13 @@
         <active>true</active>
         <consumes>application/json</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_1565242_vehicle/vehicles_api/vehicle/{vin}</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl/>
-        <http_method>GET</http_method>
-        <name>Get Vehicle</name>
+        <http_method>DELETE</http_method>
+        <name>Delete vehicle (v2)</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
-  // Declare empty array for answer
+     // Declare empty array for answer
     var answer = [];
 
     // Get the VIN from the path parameter. Generate 404 if not provided.
@@ -36,16 +36,20 @@
     // For the vehicle found, generate a JSON object and save the vehicle data in it.
     while (vehicleGr.next()) {
 
+        vehicleGr.deleteRecord();
+
         var vehicleObj = {
+            "vin": vehicleGr.getValue('vin'),
             "make": vehicleGr.getValue('make'),
             "model": vehicleGr.getValue('model'),
-            "year": vehicleGr.getValue('year'),
-            // Or pass year as integer
-            // "year": parseInt(vehicleGr.getValue('year'), 10),
+            "year": parseInt(vehicleGr.getValue('year'), 10),
             "city": vehicleGr.getValue('city'),
-            "country": vehicleGr.getValue('country')
+            "country": vehicleGr.getValue('country'),
+            "message": 'Vehicle deleted.'
         };
+
         answer.push(vehicleObj);
+
     }
 
     // Generate the response body.
@@ -53,7 +57,7 @@
 
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_1565242_vehicle/v1/vehicles_api/vehicle/{vin}</operation_uri>
+        <operation_uri>/api/x_1565242_vehicle/v2/vehicles_api/vehicle/{vin}</operation_uri>
         <produces>application/json</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/vehicle/{vin}</relative_path>
@@ -64,17 +68,17 @@
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-01-25 20:22:28</sys_created_on>
-        <sys_id>c52cbf53836232104eca5fd6feaad352</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Get Vehicle</sys_name>
+        <sys_created_on>2026-02-10 16:26:31</sys_created_on>
+        <sys_id>c520e5e8830332104eca5fd6feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete vehicle (v2)</sys_name>
         <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
-        <sys_update_name>sys_ws_operation_c52cbf53836232104eca5fd6feaad352</sys_update_name>
+        <sys_update_name>sys_ws_operation_c520e5e8830332104eca5fd6feaad3a7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-10 16:26:16</sys_updated_on>
+        <sys_updated_on>2026-02-10 16:26:31</sys_updated_on>
         <web_service_definition display_value="Vehicles API">0a153bba831232104eca5fd6feaad3c1</web_service_definition>
-        <web_service_version display_value="v1">151025e8830332104eca5fd6feaad311</web_service_version>
+        <web_service_version display_value="v2">0520a5e8830332104eca5fd6feaad373</web_service_version>
     </sys_ws_operation>
 </record_update>

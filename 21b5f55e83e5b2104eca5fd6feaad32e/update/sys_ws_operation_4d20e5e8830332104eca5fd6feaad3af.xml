@@ -3,10 +3,10 @@
         <active>true</active>
         <consumes>application/json</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_1565242_vehicle/vehicles_api/vehicles</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl/>
         <http_method>GET</http_method>
-        <name>Get Vehicles</name>
+        <name>Get Vehicles (v2)</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     // Declare empty array for answer
@@ -30,7 +30,9 @@
     var vehicleTable = 'x_1565242_vehicle_vehicle';
     var vehicleGr = new GlideRecord(vehicleTable);
     if (make) { vehicleGr.addQuery('make', make); }
-    if (model) { vehicleGr.addQuery('model', model); }
+	//to allow encoded query for model.
+    //if (model) { vehicleGr.addQuery('model', model); }
+	if (model) { vehicleGr.addQuery(model); }
     if (year) { vehicleGr.addQuery('year', year); }
     if (country) { vehicleGr.addQuery('country', country); }
     if (city) { vehicleGr.addQuery('city', city); }
@@ -65,7 +67,7 @@
 
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_1565242_vehicle/v1/vehicles_api/vehicles</operation_uri>
+        <operation_uri>/api/x_1565242_vehicle/v2/vehicles_api/vehicles</operation_uri>
         <produces>application/json</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/vehicles</relative_path>
@@ -76,17 +78,17 @@
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-01-25 20:43:31</sys_created_on>
-        <sys_id>b80108eb836232104eca5fd6feaad31c</sys_id>
+        <sys_created_on>2026-02-10 16:26:31</sys_created_on>
+        <sys_id>4d20e5e8830332104eca5fd6feaad3af</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Get Vehicles</sys_name>
+        <sys_name>Get Vehicles (v2)</sys_name>
         <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
-        <sys_update_name>sys_ws_operation_b80108eb836232104eca5fd6feaad31c</sys_update_name>
+        <sys_update_name>sys_ws_operation_4d20e5e8830332104eca5fd6feaad3af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-10 16:26:16</sys_updated_on>
+        <sys_updated_on>2026-02-10 16:27:55</sys_updated_on>
         <web_service_definition display_value="Vehicles API">0a153bba831232104eca5fd6feaad3c1</web_service_definition>
-        <web_service_version display_value="v1">151025e8830332104eca5fd6feaad311</web_service_version>
+        <web_service_version display_value="v2">0520a5e8830332104eca5fd6feaad373</web_service_version>
     </sys_ws_operation>
 </record_update>

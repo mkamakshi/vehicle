@@ -5,17 +5,34 @@
         <consumes_customized>false</consumes_customized>
         <default_operation_uri>/api/x_1565242_vehicle/vehicles_api/vehicle/{vin}</default_operation_uri>
         <enforce_acl/>
-        <http_method>GET</http_method>
-        <name>Get Vehicle</name>
+        <http_method>PATCH</http_method>
+        <name>Update vehicle</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
-  // Declare empty array for answer
+    // Declare empty array for answer
     var answer = [];
 
-    // Get the VIN from the path parameter. Generate 404 if not provided.
-    var vin = request.pathParams.vin;
+    // Get the VIN from the path parameter.
+    var vin = request.pathParams.vin.toString();
+
+    // Declare variables for the possible names in the request body.
+    var requestBody = request.body.data;
+    var make = requestBody.make;
+    var model = requestBody.model;
+    var year = requestBody.year;
+    var country = requestBody.country;
+    var city = requestBody.city;
+
+    //Generate 404 if VIN not provided.
     if (!vin) {
-        response.setError(new sn_ws_err.NotFoundError('VIN not provided.'));
+        response.setError(new sn_ws_err.NotFoundError('No VIN defined.'));
+        response.setStatus(404);
+        return;
+    }
+
+    // Generate 404 if request body contains no or invalid data.
+    if (!make && !model && !year && !country && !city) {
+        response.setError(new sn_ws_err.NotFoundError('Object contains no or invalid properties.'));
         response.setStatus(404);
         return;
     }
@@ -33,23 +50,34 @@
         return;
     }
 
-    // For the vehicle found, generate a JSON object and save the vehicle data in it.
-    while (vehicleGr.next()) {
-
-        var vehicleObj = {
-            "make": vehicleGr.getValue('make'),
-            "model": vehicleGr.getValue('model'),
-            "year": vehicleGr.getValue('year'),
-            // Or pass year as integer
-            // "year": parseInt(vehicleGr.getValue('year'), 10),
-            "city": vehicleGr.getValue('city'),
-            "country": vehicleGr.getValue('country')
-        };
-        answer.push(vehicleObj);
+    // For the vehicle found, update the record with the details in the request body.
+    if (vehicleGr.next()) {
+		if (make) {vehicleGr.make = make;}
+		if (model) {vehicleGr.model = model;}
+		if (year) {vehicleGr.year = year;}
+		if (country) {vehicleGr.country = country;}
+		if (city) {vehicleGr.city = city;}
+        vehicleGr.update();
     }
+
+    // Set a 200 status for success.
+    response.setStatus(200);
+
+    // Create a JSON object with details of the updated record.
+    var vehicleObj = {
+        "make": vehicleGr.make,
+        "model": vehicleGr.model,
+        "vin": vehicleGr.vin,
+        "year": vehicleGr.year,
+        "country": vehicleGr.country,
+        "city": vehicleGr.city,
+        "sys_id": vehicleGr.sys_id
+    };
+    answer.push(vehicleObj);
 
     // Generate the response body.
     response.setBody(answer);
+
 
 
 })(request, response);]]></operation_script>
@@ -64,14 +92,14 @@
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-01-25 20:22:28</sys_created_on>
-        <sys_id>c52cbf53836232104eca5fd6feaad352</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Get Vehicle</sys_name>
+        <sys_created_on>2026-02-09 03:55:31</sys_created_on>
+        <sys_id>b3f9290083077e104eca5fd6feaad3e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update vehicle</sys_name>
         <sys_package display_value="Vehicle" source="x_1565242_vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicle">21b5f55e83e5b2104eca5fd6feaad32e</sys_scope>
-        <sys_update_name>sys_ws_operation_c52cbf53836232104eca5fd6feaad352</sys_update_name>
+        <sys_update_name>sys_ws_operation_b3f9290083077e104eca5fd6feaad3e8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-02-10 16:26:16</sys_updated_on>
         <web_service_definition display_value="Vehicles API">0a153bba831232104eca5fd6feaad3c1</web_service_definition>
